@@ -15,7 +15,7 @@
     "webpack-node-externals": "^2.5.2"
   },
   "scripts": {
-    "dev":   "npm-run-all -p nodemon browser-sync",
+    "dev": "npm-run-all -p nodemon browser-sync",
     "nodemon": "nodemon ./server/server.js",
     "browser-sync": "browser-sync start -s --files=./server/server.js --no-open --no-notify --reload-delay=500"
   },
@@ -27,6 +27,7 @@
     "express": "^4.17.1",
     "global": "^4.4.0",
     "helmet": "^4.4.1",
+    "lodash": "^4.17.21",
     "mongoose": "^5.11.16"
   },
   "type": "module"
