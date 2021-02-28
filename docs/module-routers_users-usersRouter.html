@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: UserController</title>
+    <title>JSDoc: Namespace: usersRouter</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: UserController</h1>
+    <h1 class="page-title">Namespace: usersRouter</h1>
 
     
 
@@ -28,6 +28,8 @@
 
 <header>
     
+        <h2>
+            <span class="ancestors"><a href="module-routers_users.html">routers/users</a>~</span>usersRouter</h2>
         
     
 </header>
@@ -36,6 +38,52 @@
     <div class="container-overview">
     
         
+            <div class="description"><p>Express router to mount user related functions on.</p></div>
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_user.routes.js.html">routes/user.routes.js</a>, <a href="routes_user.routes.js.html#line12">line 12</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
 
         
     
@@ -64,7 +112,7 @@
     
 
     
-    <h4 class="name" id="~create"><span class="type-signature">(async, inner) </span>create<span class="signature">(req, res)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~get/login"><span class="type-signature">(inner) </span>get/login<span class="signature">(path, middleware)</span><span class="type-signature"></span></h4>
     
 
     
@@ -72,7 +120,7 @@
 
 
 <div class="description">
-    <p>Create a user</p>
+    <p>Route serving login form.</p>
 </div>
 
 
@@ -108,13 +156,13 @@
 
         <tr>
             
-                <td class="name"><code>req</code></td>
+                <td class="name"><code>path</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">JSON</span>
+<span class="param-type">string</span>
 
 
             
@@ -124,20 +172,20 @@
 
             
 
-            <td class="description last"><p>The user information</p></td>
+            <td class="description last"><p>Express path</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>res</code></td>
+                <td class="name"><code>middleware</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">JSON</span>
+<span class="param-type">callback</span>
 
 
             
@@ -147,7 +195,7 @@
 
             
 
-            <td class="description last"><p>Success or error message</p></td>
+            <td class="description last"><p>Express middleware.</p></td>
         </tr>
 
     
@@ -188,7 +236,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="controllers_user.controller.js.html">controllers/user.controller.js</a>, <a href="controllers_user.controller.js.html#line14">line 14</a>
+        <a href="routes_auth.routes.js.html">routes/auth.routes.js</a>, <a href="routes_auth.routes.js.html#line47">line 47</a>
     </li></ul></dd>
     
 
@@ -224,12 +272,16 @@
     
 
     
-    <h4 class="name" id="~list"><span class="type-signature">(async, inner) </span>list<span class="signature">(req, res)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~get/login"><span class="type-signature">(inner) </span>get/login<span class="signature">(path, middleware)</span><span class="type-signature"></span></h4>
     
 
     
 
 
+
+<div class="description">
+    <p>Route serving login form.</p>
+</div>
 
 
 
@@ -264,13 +316,13 @@
 
         <tr>
             
-                <td class="name"><code>req</code></td>
+                <td class="name"><code>path</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">*</span>
+<span class="param-type">string</span>
 
 
             
@@ -280,20 +332,20 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Express path</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>res</code></td>
+                <td class="name"><code>middleware</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">*</span>
+<span class="param-type">callback</span>
 
 
             
@@ -303,7 +355,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Express middleware.</p></td>
         </tr>
 
     
@@ -344,7 +396,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="controllers_user.controller.js.html">controllers/user.controller.js</a>, <a href="controllers_user.controller.js.html#line33">line 33</a>
+        <a href="routes_user.routes.js.html">routes/user.routes.js</a>, <a href="routes_user.routes.js.html#line19">line 19</a>
     </li></ul></dd>
     
 
@@ -390,13 +442,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-UserController.html">UserController</a></li></ul><h3>Global</h3><ul><li><a href="global.html#app">app</a></li><li><a href="global.html#AuthenticationRoutes">AuthenticationRoutes</a></li><li><a href="global.html#POST/api/users">POST /api/users</a></li><li><a href="global.html#router">router</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-routers_users.html">routers/users</a></li><li><a href="module-UserController.html">UserController</a></li><li><a href="module-UserRoutes.html">UserRoutes</a></li></ul><h3>Namespaces</h3><ul><li><a href="module-routers_users-usersRouter.html">usersRouter</a></li></ul><h3>Global</h3><ul><li><a href="global.html#app">app</a></li><li><a href="global.html#router">router</a></li><li><a href="global.html#routers/Users">routers/Users</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Sun Feb 28 2021 16:18:51 GMT-0500 (Eastern Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Sun Feb 28 2021 16:09:17 GMT-0500 (Eastern Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

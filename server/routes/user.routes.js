@@ -1,19 +1,19 @@
-/*
-/api/users for the following:
--Listing users with GET 
--Creating a new user with POST 
-/api/users/:userId for the following:  
--Fetching a user with GET 
--Updating a user with PUT 
--Deleting a user with DELETE
-*/
 import express from 'express'
 import userCtrl from '../controllers/user.controller'
 /**
  * @module UserRoutes
- */
+ * 
+ * @name router
+ * @function 
+*/
 const router = express.Router()
 
+
+/**
+ * @name /api/users
+ * @function GET /api/users
+ * @function POST /api/users
+ */
 router.route('/api/users')
     .get(userCtrl.list)
     .post(userCtrl.create)
