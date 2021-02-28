@@ -9,7 +9,9 @@
 */
 import express from 'express'
 import userCtrl from '../controllers/user.controller'
-
+/**
+ * @module UserRoutes
+ */
 const router = express.Router()
 
 router.route('/api/users')

@@ -1,7 +1,11 @@
 import config from './../config/config.mjs'
 import mongoose from 'mongoose';
 import app from './express.js'
-
+/**
+ * @file Server.js is the route file for this application.
+ * @type server
+ *  
+ */
 mongoose.Promise = global.Promise;
 mongoose.connect(config.mongoUri,{useNewUrlParser: true,
 

@@ -7,6 +7,9 @@ import helmet from 'helmet'
 import Template from '../template.mjs';
 import userRoutes from './routes/user.routes'
 import authRoutes from './routes/auth.routes'
+/**
+ * Express application
+ */
 const app = express();
 // configure express
 

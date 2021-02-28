@@ -10,14 +10,16 @@
   "devDependencies": {
     "browsersync": "^0.0.1-security",
     "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
     "webpack": "^5.22.0",
     "webpack-cli": "^4.5.0",
     "webpack-node-externals": "^2.5.2"
   },
   "scripts": {
-    "dev": "npm-run-all -p nodemon browser-sync",
+    "dev": "npm-run-all -p nodemon browser-sync doc",
     "nodemon": "nodemon ./server/server.js",
-    "browser-sync": "browser-sync start -s --files=./server/server.js --no-open --no-notify --reload-delay=500"
+    "browser-sync": "browser-sync start -s --files=./server/server.js --no-open --no-notify --reload-delay=500",
+    "doc": "jsdoc -c jsdoc.json"
   },
   "dependencies": {
     "browser-sync": "^2.26.14",
