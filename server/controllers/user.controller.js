@@ -1,6 +1,6 @@
-import User from '../model/user.model';
+import User from '../models/user.model';
 import extend from 'lodash/extend';
-import errorHandler from './error.controller'
+import errorHandler from '../helpers/dbErrorHandler'
 
 /**
  * @Module UserController
@@ -40,7 +40,7 @@ const list = async (res) => {
         })
     }
 }
-const userById = async(req, res, next, id) => {
+const userByID = async(req, res, next, id) => {
     try {
         let user = await User.findById(id)
         if (!user)
@@ -90,4 +90,4 @@ const remove = async (req, res, next) => {
 }
 
 
-export default {create, userById, read, list, update, remove}
+export default {create, userByID, read, list, update, remove}

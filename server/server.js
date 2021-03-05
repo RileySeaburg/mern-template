@@ -1,4 +1,4 @@
-import config from './../config/config.mjs'
+import config from './../config/config'
 import mongoose from 'mongoose';
 import app from './express.js'
 /**
