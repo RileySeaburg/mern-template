@@ -7,16 +7,18 @@ import app from './express.js'
  *  
  */
 mongoose.Promise = global.Promise;
-mongoose.connect(config.mongoUri,{useNewUrlParser: true,
+mongoose.connect(config.mongoUri, {
+  useNewUrlParser: true,
 
-useCreateIndex: true, useUnifiedTopology: true,})
+  useCreateIndex: true, useUnifiedTopology: true,
+})
 mongoose.connection.on('error', () => {
   throw new Error(`unable to connect to database: ${config.mongoUri}`);
 })
 
 console.log(config.mongoUri)
 
- app.listen(config.port, (err) => {
+app.listen(config.port, (err) => {
   if (err) {
     console.log(err)
   }
